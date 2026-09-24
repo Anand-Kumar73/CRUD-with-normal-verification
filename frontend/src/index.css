@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  background: #222;
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+input,
+textarea {
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+
+.navbar {
+  background: #222;
+  color: white;
+
+  padding: 15px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links button {
+  background: #d33;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 30px auto;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+}
+
+
+.auth-container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form {
+  background: white;
+
+  width: 400px;
+
+  padding: 30px;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 3px 15px
+    rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h1 {
+  margin-bottom: 20px;
+}
+
+
+.crud-form {
+  background: white;
+
+  padding: 20px;
+
+  margin-bottom: 30px;
+
+  border-radius: 8px;
+}
+
+.crud-form h2 {
+  margin-bottom: 15px;
+}
+
+.crud-form button {
+  margin-right: 10px;
+}
+
+
+.table-container {
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+
+  border-bottom:
+    1px solid #ddd;
+
+  text-align: left;
+}
+
+td button {
+  margin-right: 8px;
+}
+
+td button:last-child {
+  background: #d33;
+}
+
+
+.error {
+  background: #ffe0e0;
+
+  color: #b00000;
+
+  padding: 10px;
+
+  margin-bottom: 15px;
+
+  border-radius: 5px;
+}
+
+.success {
+  background: #e0ffe5;
+
+  color: #08751c;
+
+  padding: 10px;
+
+  margin-bottom: 15px;
+
+  border-radius: 5px;
+}
